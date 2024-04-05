@@ -18,9 +18,6 @@ mongoose.set('strictQuery', true);
 app.use(express.json())
 app.use(cors())
 // console.log(process.env.MONGO_URI);
-app.get("/" ,(req,res)=>{
-    res.json("TaskManager");
-})
 //db config
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
